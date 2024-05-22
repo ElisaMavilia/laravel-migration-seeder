@@ -13,4 +13,18 @@ main{
     height: 100vh;
 }
 
+header{
+    width: 100%;
+    #left-container{
+        width: 80%;
+    }
+    #right-container{
+        width: 20%;
+    }
+    .fa-train{
+        font-size: 1.5em;
+        padding-left: 100px;
+    }
+}
+
 
