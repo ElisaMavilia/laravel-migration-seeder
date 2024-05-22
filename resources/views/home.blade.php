@@ -4,7 +4,14 @@
 
 @section('content')
 <main>
-    <h1>Home page</h1>
+    <h1>Departures</h1>
+   <ul>
+       @foreach ($trains as $train)
+       <li>{{$train->company}}</li>
+       @endforeach
+   </ul>
+   
+    </div>
 </main>
 
-@endsection
+

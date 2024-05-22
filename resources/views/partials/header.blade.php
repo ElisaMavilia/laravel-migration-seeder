@@ -1,1 +1,3 @@
-<div>Header <i class="fa-solid fa-home"></i></div>
+<header>
+    <h2>Transport information</h2>
+</header>
