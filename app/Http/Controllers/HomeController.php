@@ -12,6 +12,7 @@ class HomeController extends Controller
     {
         $trains = Train::all();
             //dd($trains);
+            $trains = Train::orderBy('departure_time', 'asc')->get();
             return view('home', compact('trains'));
     }
 }
