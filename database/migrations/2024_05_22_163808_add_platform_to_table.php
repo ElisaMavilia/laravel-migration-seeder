@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->time('arrival_time')->change();
-            
+            $table->string('platform')->after('id');
         });
     }
 
@@ -27,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->string('')->change();
+            //
         });
     }
 };
