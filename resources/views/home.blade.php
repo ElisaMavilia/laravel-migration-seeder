@@ -21,7 +21,7 @@
                     <tr class="table-dark table-striped">
                         
                         <td>{{$train->platform}}</td>
-                        <td class="text-danger">{{$train->departure_time}}</td>
+                        <td class="text-success">{{$train->departure_time}}</td>
                         <td>{{$train->arrival_time}}</td>
                         <td scope="row">{{$train->departure_station}}</td>
                         <td>{{$train->arrival_station}}</td>
