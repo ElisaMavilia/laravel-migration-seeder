@@ -10,8 +10,11 @@ $fa-font-path: "../webfonts" !default;
 @import '~bootstrap/scss/bootstrap';
 
 main{
-    height: 100vh;
-    overflow-y: scroll;
+    height: 100%;
+
+    table{
+        overflow-y: scroll;
+    }
 }
 
 header{
@@ -27,5 +30,6 @@ header{
         padding-left: 100px;
     }
 }
+
 
 
