@@ -13,8 +13,8 @@ class HomeController extends Controller
         $trains = Train::all();
             //dd($trains);
             $trains = Train::orderBy('departure_time', 'asc')->get();
-            $train = Train::where('departure_time', '>=', now())->get();
-            $train = Train::select('on_time')->where('on_time', '=', 1)->limit(20)->get();
+           /*  $train = Train::where('departure_time', '>=', now())->get(); */
+            $trains = Train::select('on_time')->where('on_time', '=', 1)->limit(20)->get();
             return view('home', compact('trains'));
     }
 }
